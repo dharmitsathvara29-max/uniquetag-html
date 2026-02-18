@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG defs Tag Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>SVG &lt;defs&gt; Tag Example (Gradient)</h2>
+
+<svg width="400" height="200">
+    
+   
+    <defs>
+        <linearGradient id="myGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="red" />
+            <stop offset="100%" stop-color="blue" />
+        </linearGradient>
+    </defs>
+
+
+    <rect x="50" y="40" width="300" height="120" fill="url(#myGradient)" />
+
+</svg>
+
+</body>
+</html>
